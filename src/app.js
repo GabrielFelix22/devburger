@@ -1,6 +1,6 @@
 import { resolve } from 'node:path';
-import express from 'express'; // const express = require('express')
-import routes from './routes'; // const routes = require('./routes')
+import express from 'express'; 
+import routes from './routes'; 
 
 import './database';
 
