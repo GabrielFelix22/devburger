@@ -1,6 +1,6 @@
 import * as Yup from  'yup';
-import Order from '../schemas/Order';
 import Product from '../models/Product';
+import Order from '../schemas/Order';
 
 class OrderController {
     async store(request, response) {
