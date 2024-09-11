@@ -60,9 +60,12 @@ class OrderController {
 				name: request.userName,
 			},
 			products: formattedProducts,
+			status: 'Pedido Realizado',
 		};
 
-		return response.status(201).json({ order });
+		const createdOrder = await Order.create(order);
+
+		return response.status(201).json(createdOrder);
 	}
 }
 
